@@ -1,0 +1,8 @@
+---
+- name: Kubernetes Cluster Installation
+  hosts: all
+  become: true
+  gather_facts: true
+  roles:
+    - k8s-master
+    - k8s-worker
